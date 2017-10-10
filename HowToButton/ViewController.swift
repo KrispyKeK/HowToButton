@@ -8,24 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    
     @IBOutlet weak var firstButton: UIButton!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    @IBAction func changeColor(_ sender: UIButton){
-        firstButton.backgroundColor = .red
-        if (firstButton.backgroundColor != .cyan){
-            firstButton.backgroundColor = .cyan
-        }
-        else{
-            firstButton.backgroundColor = .black
-        }
+    
+    @IBAction func clickButton(_ sender: UIButton) {
+        view.backgroundColor = createColor()
+        firstButton.setTitleColor(createColor(), for: .normal)
+        firstButton.backgroundColor = createColor()
     }
-    override func didReceiveMemoryWarning() {
+    private func createColor() -> UIColor
+    {
+        let redValue = CGFloat(Double(arc4random_uniform(256)) / 255.00)
+        let blueValue = CGFloat(Double(arc4random_uniform(256)) / 255.00)
+        let greenValue = CGFloat(Double(arc4random_uniform(256)) / 255.00)
+        let newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: CGFloat(1.0))
+        return newColor
+    }
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
+
 
