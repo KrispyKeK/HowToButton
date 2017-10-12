@@ -14,6 +14,7 @@
 		612DA7131F8D037B0070BBBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612DA7111F8D037B0070BBBA /* LaunchScreen.storyboard */; };
 		612DA71E1F8D037B0070BBBA /* HowToButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612DA71D1F8D037B0070BBBA /* HowToButtonTests.swift */; };
 		612DA7291F8D037B0070BBBA /* HowToButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612DA7281F8D037B0070BBBA /* HowToButtonUITests.swift */; };
+		618B6D191F8FB8DC002C80A2 /* changeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B6D181F8FB8DC002C80A2 /* changeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		612DA7241F8D037B0070BBBA /* HowToButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowToButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		612DA7281F8D037B0070BBBA /* HowToButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToButtonUITests.swift; sourceTree = "<group>"; };
 		612DA72A1F8D037C0070BBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618B6D181F8FB8DC002C80A2 /* changeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				612DA7081F8D037A0070BBBA /* AppDelegate.swift */,
 				612DA70A1F8D037A0070BBBA /* ViewController.swift */,
+				618B6D181F8FB8DC002C80A2 /* changeScreen.swift */,
 				612DA70C1F8D037A0070BBBA /* Main.storyboard */,
 				612DA70F1F8D037B0070BBBA /* Assets.xcassets */,
 				612DA7111F8D037B0070BBBA /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				612DA70B1F8D037A0070BBBA /* ViewController.swift in Sources */,
 				612DA7091F8D037A0070BBBA /* AppDelegate.swift in Sources */,
+				618B6D191F8FB8DC002C80A2 /* changeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
