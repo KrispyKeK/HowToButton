@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    
+    lazy var colorTool: ColorTools = ColorTools()
+ 
     @IBOutlet weak var Adding: UIStepper!
     @IBOutlet weak var firstButton: UIButton!
     @IBOutlet weak var CauseSwitch: UISwitch!
@@ -33,7 +34,7 @@ class ViewController: UIViewController
         labelFirst.text = "Testing"
     }
     @IBAction func clickButton(_ sender: UIButton) {
-        view.backgroundColor = createColor()
+        view.backgroundColor = colorTool.createColor()
         firstButton.setTitleColor(createColor(), for: .normal)
         firstButton.backgroundColor = createColor()
     }
